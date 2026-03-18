@@ -37,14 +37,7 @@ export const projectType = defineType({
       initialValue: () => new Date().toISOString(),
       validation: (rule) => rule.required(),
     }),
-     defineField({
-      name: 'showProjectName',
-      type: 'boolean',
-      readOnly: false,
-      initialValue: ({document}) => {
-        return !document?.projectDescription
-      } 
-    })
+   
     // defineField({
     //   name: 'body',
     //   type: 'array',
