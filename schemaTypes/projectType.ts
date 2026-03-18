@@ -40,10 +40,10 @@ export const projectType = defineType({
      defineField({
       name: 'showProjectName',
       type: 'boolean',
-      readOnly: true,
+      readOnly: false,
       initialValue: ({document}) => {
         return !document?.projectDescription
-      }
+      } 
     })
     // defineField({
     //   name: 'body',
