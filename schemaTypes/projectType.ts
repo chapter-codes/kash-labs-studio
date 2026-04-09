@@ -24,7 +24,7 @@ export const projectType = defineType({
     defineField({
       name: 'projectLink',
       type: 'string',
-      validation:(rule)=>rule.required()
+      // validation:(rule)=>rule.required()
     }),
     defineField({
       name: 'image',
